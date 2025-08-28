@@ -1,0 +1,86 @@
+The (in)transparency of meaning change and variation
+A study of the indefinite cualquiera in European and Argentinian Spanish
+
+This repository hosts the research data and protocols accompanying the book The (in)transparency of meaning change and variation: A study of the indefinite cualquiera in European and Argentinian Spanish.
+
+Overview
+
+Goal. Trace the semantic development and distributional variation of the indefinite cualquiera (and historical graphical variants) across time and varieties of Spanish.
+
+Approach. A dataset sampling from the Corpus del Español with strict philological and syntactic filtering, yielding period-balanced datasets suitable for quantitative and qualitative analysis.
+
+Corpus and query
+
+Primary source: Corpus del Español — Historical & Genres interface
+https://www.corpusdelespanol.org/hist-gen/
+
+Selection protocol (Methodology)
+
+Our aim is to obtain ≥ 150 valid examples per period (i.e., examples that are philologically reliable and free of the exclusion contexts listed below).
+
+Period sampling
+
+For each period/century, randomly retrieve ≥ 200 contexts (seeded sampling; see “Reproducibility”).
+
+Copy selected contexts into one spreadsheet per century (see “Repository layout”).
+
+Philological reliability (12th–14th centuries)
+
+For centuries 1200–1400, we exclude texts that are not philologically reliable based on Octavio & Molina (2017) (“Cordemáforo”). Each text is assigned one of:
+
+V — very reliable: always included
+
+A — reliable: included if V-texts are insufficient
+
+R — not reliable: excluded
+
+N — not found in list: excluded
+
+The file docs/cordemaforo_list.md (or .csv) in this repo contains the full list and decisions used.
+
+Syntactic exclusions (all periods)
+
+Exclude any context where cualquiera (or a variant) appears in:
+
+coordination (e.g., X y cualquiera / cualquiera o Z),
+
+verbal ellipsis, or
+
+comparison clauses.
+
+If the period’s valid count is still < 150
+
+Sample more randomized contexts and re-apply the filters.
+
+If still insufficient:
+
+1200–1400 only:
+a) take all contexts from V/A texts and apply syntactic filters;
+b) if still short, include remaining occurrences from V/A shown by the corpus (after filtering).
+
+Other periods: sample additional randomized contexts and re-apply syntactic filters.
+
+1200–1400 only (last resort): selectively classify some N/R items until reaching ≥ 150 valid cases.
+
+What counts as a “valid case”?
+
+A line in which a token matching *ualqu* is:
+
+from an eligible text (per the rules above), and
+
+not in coordination, verbal ellipsis, or comparison, and
+
+judged philologically reliable (centuries 1200–1400), and
+
+assigned a variant label (cualquier, cualquiera, qualquier, qualquiera, qualquiere).
+
+Each case includes left and right context to support interpretation.
+
+Licensing & attribution
+
+This dataset (annotations, selections, spreadsheets): Recommended license: CC BY 4.0.
+
+Please cite the book and this repository (see Kellert, Olga. Forthcoming. The (in)transparency of meaning change and variation: A study of the indefinite cualquiera in European and Argentinian Spanish. (Advances in Historical Linguistics). Berlin: Language Science Press.) 
+References:
+Octavio de Toledo, Álvaro & Javier Rodríguez Molina. 2017. La imprescindible distinción entre texto y testimonio: El CORDE y los criterios de fiabilidad lingüística. Scriptum digital 6. 5–68. https : / / raco . cat / index . php / scriptumdigital /
+article/view/329258.
